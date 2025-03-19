@@ -1,0 +1,9 @@
+/* Reset some basic elements */
+#read-the-room-root {
+  all: initial;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#read-the-room-root * {
+  box-sizing: border-box;
+} 

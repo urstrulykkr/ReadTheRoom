@@ -11,18 +11,15 @@
     "content_scripts": [
       {
         "matches": ["*://*.reddit.com/*"],
-        "js": ["contentScript.js"],
+        "js": ["dist/contentScript-bundle.js", "dist/react-bundle.js"],
         "run_at": "document_end"
       }
     ],
     "web_accessible_resources": [
       {
-        "resources": ["contentScript.js"],
+        "resources": ["dist/*"],
         "matches": ["*://*.reddit.com/*"]
       }
-    ],
-    "action": {
-      "default_popup": "popup/index.html"
-    }
+    ]
   }
   
